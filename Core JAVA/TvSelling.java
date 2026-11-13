@@ -1,0 +1,14 @@
+public class TvSelling 
+{
+	public static void main(String[] args) 
+	{
+		double tvPrice = Double.parseDouble(args[0]);
+		double sellingPrice = tvPrice*27/100+tvPrice;
+		double gstOnTv = sellingPrice*5/100;
+		double finalSellingPrice = sellingPrice + gstOnTv;
+		double profit = finalSellingPrice - tvPrice - gstOnTv;
+		System.out.println("Total Selling price : "+finalSellingPrice);
+        System.out.println("Profit : "+profit+" After "+gstOnTv+" GST");	
+	    
+	}
+}

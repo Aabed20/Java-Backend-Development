@@ -1,0 +1,195 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f1f5f9;
+    min-height: 100vh;
+}
+
+/* Page Layout */
+.page {
+    padding: 30px 40px;
+}
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.topbar h2 {
+    font-weight: 500;
+    color: #1e293b;
+}
+
+.logout-btn {
+    text-decoration: none;
+    background: #ef4444;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #dc2626;
+}
+
+/* Center Form */
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Form Card */
+.form-card {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 
+        0 10px 30px rgba(0,0,0,0.08),
+        0 1px 3px rgba(0,0,0,0.05);
+    animation: fadeIn 0.5s ease;
+}
+
+.form-card h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Input Styling */
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 14px 12px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+    background: transparent;
+}
+
+.input-box label {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    font-size: 14px;
+    color: #64748b;
+    pointer-events: none;
+    transition: 0.3s ease;
+    background: white;
+    padding: 0 4px;
+}
+
+/* Floating Effect */
+.input-box input:focus,
+.input-box input:valid {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: -8px;
+    left: 10px;
+    font-size: 12px;
+    color: #2563eb;
+}
+
+/* Two Column Row */
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37,99,235,0.3);
+}
+
+.top-actions {
+    display: flex;
+    gap: 12px;
+}
+
+/* Back Button */
+.back-btn {
+    text-decoration: none;
+    background: #e2e8f0;
+    color: #1e293b;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #cbd5e1;
+}
+
+/* Logout Button */
+.logout-btn {
+    text-decoration: none;
+    background: #ef4444;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #dc2626;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+}

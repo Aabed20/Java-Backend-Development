@@ -1,0 +1,50 @@
+@charset "UTF-8";
+#form
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    gap: 50px;
+ display: flex;
+    align-items: center;
+ justify-content: center; 
+ padding: 20px;
+ background-color: rgb(238, 187, 187);
+}
+#first
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    display: flex;
+ align-items: center;
+ justify-content: center;
+}
+#main
+{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+#name
+{
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+}
+#age
+{
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+}
+#mobile
+{
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+}
+#gender
+{
+    display: flex;
+    column-gap: 25px;
+    
+}

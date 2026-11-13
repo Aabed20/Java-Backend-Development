@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com"/>
+    
+    <bean id="space" class="com.space.SpaceMission">
+    <property name="crewMembers">
+    <list>
+    <value>Aabed</value>
+    <value>Rahil</value>
+    <value>Asef</value>
+    <value>Tejas</value>
+    </list>
+    
+    </property>
+    
+    <property name="equipments">
+    <list>
+    <value>Space Ship</value>
+    <value>Space suites</value>
+    <value>Fuel</value>
+    <value>Space Food</value>
+   
+    </list>
+    </property>
+   
+   <property name="missionStages">
+   
+   <list>
+   <value>Stage 1</value>
+   <value>Stage 2</value>
+   <value>Staga 3</value>
+   <value>Final Stage</value>
+   </list>
+   </property> 
+   
+   <property name="searchAreas">
+   <set>
+   <value>Moon East Side</value>
+   <value>Moon West Side</value>
+   </set>
+   </property>
+   
+   <property name="emergencyProtocols">
+   <set>
+   <value>Fuel Over</value>
+   <value>Food Over</value>
+   <value>SpaceShip Damaged</value>
+   
+   </set>
+   </property>
+   
+   <property name="crewRoles">
+   <map>
+   <entry key="Aabed" value="Scientist"/>
+   <entry key="Rahil" value="SpaceShip Driver"/>
+   <entry key="Asef" value="Engineer"/>
+   <entry key="Tejas" value="Engineer"/>
+   
+   </map>
+   
+   </property>
+    </bean>
+    
+    </beans>

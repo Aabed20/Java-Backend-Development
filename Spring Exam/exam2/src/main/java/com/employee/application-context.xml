@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com"/>
+   
+   <bean id="p1" class="com.employee.Project">
+   <constructor-arg value="101"/>
+   <constructor-arg value="Ecommerce website"/>
+   <constructor-arg value="Core Java And Adv java"/>
+   </bean>
+   
+   <bean id="p2" class="com.employee.Project">
+   <constructor-arg value="102"/>
+   <constructor-arg value="Bill calculator"/>
+   <constructor-arg value="Core Java And Adv java"/>
+   </bean>
+   
+   <bean id="p3" class="com.employee.Project">
+   <constructor-arg value="103"/>
+   <constructor-arg value="Hotel management"/>
+   <constructor-arg value="SpringBoot"/>
+   </bean>
+   
+   <bean id="manager" class="com.employee.Manager">
+   <constructor-arg value="201"/>
+   <constructor-arg value="Prashant sir"/>
+   </bean>
+   
+   <bean id="employee" class="com.employee.Employee">
+   <constructor-arg value="101"/>
+   <constructor-arg value="Aabed Pathan"/>
+   <constructor-arg value="IT department"/>
+   
+   <property name="manager" ref="manager"/>
+   
+   <property name="projects">
+   <list>
+   <ref bean="p1"/>
+   <ref bean="p2"/>
+   <ref bean="p3"/>
+   </list>
+   </property>
+   </bean>
+   
+   </beans>

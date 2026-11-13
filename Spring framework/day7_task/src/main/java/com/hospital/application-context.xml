@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com"/>
+    
+    <bean id="d1" class="com.hospital.Doctor">
+    <constructor-arg value="101"/>
+    <constructor-arg value="Saquib"/>
+    <constructor-arg value="Ayurvedic"/>
+    <constructor-arg value="1"/>
+    </bean>
+    
+    <bean id="d2" class="com.hospital.Doctor">
+    <constructor-arg value="102"/>
+    <constructor-arg value="Maaz"/>
+    <constructor-arg value="BAMS"/>
+    <constructor-arg value="1"/>
+    </bean>
+    
+    <bean id="d3" class="com.hospital.Doctor">
+    <constructor-arg value="103"/>
+    <constructor-arg value="Bushra"/>
+    <constructor-arg value="MBBS"/>
+    <constructor-arg value="2"/>
+    
+    </bean>
+    
+    <bean id="hospital" class="com.hospital.Hospital">
+    <constructor-arg>
+    <map>
+    <entry key="101" value-ref="d1"/>
+    <entry key="102" value-ref="d2"/>
+    <entry key="103" value-ref="d3"/>
+    </map>
+    </constructor-arg>
+    
+    </bean>
+    
+    </beans>

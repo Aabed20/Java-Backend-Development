@@ -1,0 +1,12 @@
+public class ArmstrongOrNumber
+{
+    public static void main(String[] args)
+    {
+      int a = Integer.parseInt(args[0]);
+      int b = 0;
+      while(a!=0)
+       {
+         b = a%10;
+         b += b*b*b;
+         a = a/10;
+         

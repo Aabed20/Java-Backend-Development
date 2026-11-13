@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com"/>
+    
+    <bean id="p1"  class="com.online_shopping.Product">
+    <constructor-arg value="101"/>
+    <constructor-arg value="Realme p4x"/>
+    <constructor-arg value="Mobiles"/>
+    <constructor-arg value="22000"/>
+    </bean>
+    
+    <bean id="p2"  class="com.online_shopping.Product">
+    <constructor-arg value="102"/>
+    <constructor-arg value="Realme Tv"/>
+    <constructor-arg value="TV"/>
+    <constructor-arg value="25000"/>
+    </bean>
+    
+    <bean id="p3"  class="com.online_shopping.Product">
+    <constructor-arg value="103"/>
+    <constructor-arg value="Redmi Book 15"/>
+    <constructor-arg value="Laptop"/>
+    <constructor-arg value="35000"/>
+    </bean>
+    
+    <bean id="cart" class="com.online_shopping.ShoppingCart">
+   <!--   <property name="products">
+    <list>
+    <ref bean="p1"/>
+    <ref bean="p2"/>
+    <ref bean="p3"/>
+    </list>
+    </property>-->
+    <constructor-arg>
+    <list>
+    <ref bean="p1"/>
+    <ref bean='p2'/>
+    <ref bean="p3"/>
+    </list>
+    </constructor-arg>
+    </bean>
+    </beans>

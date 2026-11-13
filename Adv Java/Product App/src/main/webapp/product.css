@@ -1,0 +1,93 @@
+@charset "UTF-8";@charset "UTF-8";
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin: 0;
+    padding: 40px 20px;
+}
+
+table {
+    width: 85%;
+    margin: auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+th {
+    padding: 15px;
+    background: linear-gradient(45deg, #141e30, #243b55);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f6f9;
+}
+
+
+tr {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+tr:hover {
+    transform: scale(1.02);
+    background: #e8f0ff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+td:nth-child(3) {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.low-stock {
+    color: #e74c3c;
+    font-weight: bold;
+    animation: pulse 1s infinite alternate;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+}
+
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}

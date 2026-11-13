@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body
+{
+	font-family:Arial, sans-serif;
+	font-size : 10px;
+}
+.login{
+	border : 2px solid black;
+    width : 250px;
+    height : 400px;
+    padding : 20px;
+    margin-left : 50px;
+	}
+	
+	

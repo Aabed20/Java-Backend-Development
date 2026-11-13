@@ -1,0 +1,18 @@
+
+student :
+ id: 101	
+ name: Aabed
+ branch: ComputerScience
+ subjects:
+  - Java 
+  - Html
+  - Operating system
+  - Database
+  - css
+ marks:
+  - 95
+  - 92
+  - 85
+  - 90
+  - 88
+ admission: true		

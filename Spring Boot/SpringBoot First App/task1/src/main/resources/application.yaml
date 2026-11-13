@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: task1
+  profiles:
+   active: student1
+   
+university :
+     name: SRTMUN
+     address: Nanded
+     code: 527188   

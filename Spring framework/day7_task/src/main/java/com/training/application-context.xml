@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com"/>
+   
+    <bean id="c1" class="com.training.Course">
+    <constructor-arg value="101"/>
+     <constructor-arg value="Java Full Stack"/>
+      <constructor-arg value="6"/>
+       <constructor-arg value="30000"/>
+    </bean>
+    <bean id="c2" class="com.training.Course">
+    <constructor-arg value="102"/>
+     <constructor-arg value="Python Full Stack"/>
+      <constructor-arg value="4"/>
+       <constructor-arg value="20000"/>
+    </bean>
+    
+    <bean id="c3" class="com.training.Course">
+    <constructor-arg value="103"/>
+     <constructor-arg value="Dot Net Full Stack"/>
+      <constructor-arg value="6"/>
+       <constructor-arg value="25000"/>
+    </bean>
+    
+    <bean id="trainingInstitute" class="com.training.TrainingInstitute">
+    <constructor-arg>
+    <list>
+    <ref bean="c1"/>
+    <ref bean="c2"/>
+    <ref bean="c3"/>
+    </list>
+    </constructor-arg>
+    
+    </bean>
+    
+   
+    </beans>

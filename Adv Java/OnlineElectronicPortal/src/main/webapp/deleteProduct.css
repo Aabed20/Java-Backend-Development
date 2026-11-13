@@ -1,0 +1,125 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f8fafc;
+}
+
+/* Topbar */
+.topbar {
+    background: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.topbar h2 {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    padding: 20px;
+}
+
+/* Status Card */
+.status-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.06);
+}
+
+.status-card h3 {
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+/* Message Box Base */
+.message-box {
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Success Style */
+.success {
+    background: #ecfdf5;
+    border-left: 5px solid #10b981;
+    color: #065f46;
+}
+
+/* Error Style */
+.error {
+    background: #fef2f2;
+    border-left: 5px solid #dc2626;
+    color: #7f1d1d;
+}
+
+/* Buttons */
+.btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.25s ease;
+}
+
+.secondary {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.secondary:hover {
+    background: #cbd5e1;
+}
+
+.primary {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+}
+
+.primary:hover {
+    transform: translateY(-2px);
+}
+
+.add-nav {
+    background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+    color: white;
+}
+
+.add-nav:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(59,130,246,0.3);
+}
+
+.danger {
+    background: #1e293b;
+    color: white;
+}
+
+.danger:hover {
+    background: #0f172a;
+}

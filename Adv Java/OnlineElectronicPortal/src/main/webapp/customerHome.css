@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+/* Body Styling */
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: url("./Images/img1.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.dashboard-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Card */
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+.dashboard-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card h2 span {
+    color: #1f4037;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+/* Buttons */
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* Primary Button */
+.primary {
+    background: #1f4037;
+    color: #fff;
+}
+
+.primary:hover {
+    background: #16352e;
+    transform: translateY(-2px);
+}
+
+/* Secondary Button */
+.secondary {
+    background: transparent;
+    border: 2px solid #1f4037;
+    color: #1f4037;
+}
+
+.secondary:hover {
+    background: #1f4037;
+    color: #fff;
+    transform: translateY(-2px);
+}

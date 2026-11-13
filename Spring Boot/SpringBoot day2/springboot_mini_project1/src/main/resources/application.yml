@@ -1,0 +1,13 @@
+spring:
+ application:
+  name: Hospital_Management
+  
+hospital:
+ name: Apollo
+ listoftreatement:
+  - Cardic
+  - ENT
+  - ARTHO
+ contactperson: Rahil
+ contactnumber: 123456789
+ location: Bajara Hills  

@@ -1,0 +1,10 @@
+public class FindYearMonthAndDays
+{
+	public static void main(String[] args) 
+	{
+		double numberOfDays = Double.parseDouble(args[0]);
+		double years = numberOfDays/365;
+		double months = numberOfDays/30;
+		System.out.println("Years = "+years+"  Months = "+months);
+	}
+}

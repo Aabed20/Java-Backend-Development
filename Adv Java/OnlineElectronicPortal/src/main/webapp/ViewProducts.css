@@ -1,0 +1,257 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f8fafc;
+}
+
+/* Topbar */
+.topbar {
+    background: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.topbar h2 {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.top-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Container */
+.container {
+    padding: 40px;
+}
+
+/* Welcome Text */
+.welcome {
+    margin-bottom: 20px;
+    color: #334155;
+}
+
+/* Empty State */
+.empty {
+    text-align: center;
+    margin-top: 80px;
+    color: #64748b;
+}
+
+/* Table */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+thead {
+    background: #2563eb;
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+tbody td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:hover {
+    background: #f1f5f9;
+}
+
+/* Buttons */
+.btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.small {
+    font-size: 12px;
+    padding: 6px 10px;
+}
+
+.primary {
+    background: #2563eb;
+    color: white;
+}
+
+.primary:hover {
+    background: #1d4ed8;
+}
+
+.secondary {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.secondary:hover {
+    background: #cbd5e1;
+}
+
+.danger {
+    background: #ef4444;
+    color: white;
+}
+
+.danger:hover {
+    background: #dc2626;
+}
+
+.edit {
+    background: #f59e0b;
+    color: white;
+}
+
+.edit:hover {
+    background: #d97706;
+}
+
+.delete {
+    background: #ef4444;
+    color: white;
+}
+
+.delete:hover {
+    background: #dc2626;
+}
+
+/* Buttons Base */
+.btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    display: inline-block;
+}
+
+/* Add Product (Premium Indigo Gradient) */
+.primary {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+    box-shadow: 0 4px 12px rgba(99,102,241,0.3);
+}
+
+.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(99,102,241,0.4);
+}
+
+/* Dashboard Button */
+.secondary {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.secondary:hover {
+    background: #cbd5e1;
+}
+
+/* Edit Button (Professional Teal) */
+.edit {
+    background: #0d9488;
+    color: white;
+    box-shadow: 0 4px 10px rgba(13,148,136,0.25);
+}
+
+.edit:hover {
+    background: #0f766e;
+    transform: translateY(-2px);
+}
+
+/* Delete Button (Soft Modern Red) */
+.delete {
+    background: #dc2626;
+    color: white;
+    box-shadow: 0 4px 10px rgba(220,38,38,0.25);
+}
+
+.delete:hover {
+    background: #b91c1c;
+    transform: translateY(-2px);
+}
+
+/* Logout Button */
+.danger {
+    background: #1e293b;
+    color: white;
+}
+
+.danger:hover {
+    background: #0f172a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+/* Header */
+thead {
+    background: #1e293b;
+    color: white;
+}
+
+thead th {
+    padding: 16px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* Body */
+tbody td {
+    padding: 15px;
+    font-size: 14px;
+    color: #475569;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* Row Hover */
+tbody tr {
+    transition: background 0.2s ease;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,152 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f8fafc;
+}
+
+/* Topbar */
+.topbar {
+    background: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.topbar h2 {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+/* Card */
+.card {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.06);
+}
+
+/* Text */
+.welcome {
+    margin-bottom: 5px;
+    color: #1e293b;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Input */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #334155;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+    outline: none;
+}
+
+/* Readonly style */
+input[readonly] {
+    background: #f1f5f9;
+    cursor: not-allowed;
+}
+
+/* Buttons */
+.btn {
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.25s ease;
+}
+
+/* Dashboard */
+.secondary {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.secondary:hover {
+    background: #cbd5e1;
+}
+
+/* View Products */
+.primary {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: white;
+}
+
+.primary:hover {
+    transform: translateY(-2px);
+}
+
+/* Logout */
+.danger {
+    background: #1e293b;
+    color: white;
+}
+
+.danger:hover {
+    background: #0f172a;
+}
+
+/* Update Button */
+.update-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #0d9488, #14b8a6);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.update-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(13,148,136,0.3);
+}

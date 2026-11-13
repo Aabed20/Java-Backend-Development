@@ -1,0 +1,127 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.card h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #555;
+}
+
+.welcome span {
+    font-weight: 600;
+    color: #203a43;
+}
+
+/* Message */
+.message {
+    background: #e3f2fd;
+    color: #0d47a1;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* No Products */
+.no-products {
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    color: #c62828;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+thead {
+    background: #203a43;
+    color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Buy Button */
+.buy-btn {
+    text-decoration: none;
+    padding: 6px 12px;
+    background: #28a745;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    background: #1e7e34;
+}
+
+/* Logout Button */
+.back-btn {
+    text-align: center;
+}
+
+.back-btn a {
+    text-decoration: none;
+    color: #fff;
+    background: #c62828;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.back-btn a:hover {
+    background: #8e0000;
+}

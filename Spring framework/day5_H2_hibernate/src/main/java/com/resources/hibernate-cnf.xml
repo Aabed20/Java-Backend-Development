@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Database Driver -->
+        <property name="hibernate.connection.driver_class">
+            org.h2.Driver
+        </property>
+
+        <!-- Database URL -->
+        <property name="hibernate.connection.url">
+            jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+        </property>
+
+        <!-- Database Credentials -->
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password"></property>
+
+        <!-- Hibernate Dialect -->
+        <property name="hibernate.dialect">
+            org.hibernate.dialect.H2Dialect
+        </property>
+
+        <!-- Display SQL Queries -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Automatically Create Database Schema -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Entity Mapping -->
+        <mapping class="com.models.Patient"/>
+
+    </session-factory>
+</hibernate-configuration>

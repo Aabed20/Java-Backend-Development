@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="addproducts.css">
+</head>
+<body>
+
+    <div class="product-container">
+        <div class="product-card">
+            <h2>Product Details</h2>
+
+            <form action="addprod" method="post">
+
+                <div class="input-group">
+                    <label>Product Code</label>
+                    <input type="text" name="pcode" placeholder="Enter product code" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Product Name</label>
+                    <input type="text" name="pname" placeholder="Enter product name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Product Price</label>
+                    <input type="number" name="pprice" placeholder="Enter product price" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Product Stock</label>
+                    <input type="number" name="pstock" placeholder="Enter product stock" required>
+                </div>
+
+                <button type="submit" name="addProduct">Add Product</button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

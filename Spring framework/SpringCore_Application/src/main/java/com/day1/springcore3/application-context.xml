@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.example"/>
+    <bean id="book" class="com.day1.springcore3.Book">
+    <!--  <property name="bookId" value="123"/>
+    <property name="bookName" value="Java Programming"/>
+    <property name="authorName" value="James Gosling"/>
+    <property name="price" value="2000"/>-->
+    
+    <constructor-arg value="234"/>
+    <constructor-arg value="C programming"/>
+    <constructor-arg value="Dennis Ritchie"/>
+    <constructor-arg value="1000"/>
+    
+    </bean>
+    
+    
+    </beans>

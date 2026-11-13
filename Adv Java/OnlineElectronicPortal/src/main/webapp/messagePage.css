@@ -1,0 +1,53 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #232526, #414345);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Card */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Heading */
+.card h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* Message Box */
+.message {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* Login Section */
+.login-section {
+    margin-top: 15px;
+}

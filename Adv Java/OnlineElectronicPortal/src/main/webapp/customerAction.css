@@ -1,0 +1,88 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+.card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.card h2 span {
+    color: #243b55;
+}
+
+/* Message Box */
+.message {
+    background: #e3f2fd;
+    color: #0d47a1;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Primary */
+.primary {
+    background: #243b55;
+    color: #fff;
+}
+
+.primary:hover {
+    background: #1b2d40;
+    transform: translateY(-2px);
+}
+
+/* Secondary */
+.secondary {
+    border: 2px solid #243b55;
+    color: #243b55;
+}
+
+.secondary:hover {
+    background: #243b55;
+    color: #fff;
+    transform: translateY(-2px);
+}

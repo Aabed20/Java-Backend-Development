@@ -1,0 +1,17 @@
+student :
+ id: 102	
+ name: rahil
+ branch: ComputerScience
+ subjects:
+  - Java 
+  - Html
+  - Operating system
+  - Database
+  - css
+ marks:
+  - 80
+  - 70
+  - 75
+  - 70
+  - 75
+ admission: true

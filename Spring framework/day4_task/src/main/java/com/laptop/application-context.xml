@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com"/>
+    
+    <bean id="processor" class="com.laptop.Processor">
+    <property name="processorId" value="123"/>
+    <property name="processorName" value="intel"/>
+    <property name="generation" value="i3"/>
+    
+    </bean>
+    
+    <bean id="laptop" class="com.laptop.Laptop" autowire="byName">
+    <property name="laptopId" value="54321"/>
+    <property name="brand" value="Redmi"/>
+    
+    </bean>
+    
+    <bean id="laptop1" class="com.laptop.Laptop" autowire="byType">
+    <property name="laptopId" value="12345"/>
+    <property name="brand" value="Dell"/>
+    
+    </bean>
+    
+    
+    
+    </beans>

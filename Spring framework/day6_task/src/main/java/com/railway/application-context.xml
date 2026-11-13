@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com"/>
+   
+   <bean id="railway" class="com.railway.RailwayCoach">
+     
+     <property name="passengers">
+     <list>
+     <value>Aabed</value>
+     <value>Rahil</value>
+     
+     </list>
+     
+     </property>
+     
+     <property name="facilities">
+     <list>
+     <value>Soft Seats</value>
+     <value>Windows</value>
+     <value>Fans</value>
+     <value>Rest Rooms</value>
+     <value>Electricity Ports</value>
+     </list>
+     </property>
+     
+     <property name="reservedSeats">
+     <set>
+     <value>J1234</value>
+     <value>J1235</value>
+     <value>J1236</value>
+     <value>J1237</value>
+     </set>
+     
+     </property>
+     
+     <property name="coachTypes">
+     <set>
+     <value>General</value>
+     <value>Sleeper 2nd class</value>
+     <value>Sleep 3rd class</value>
+     </set>
+     
+     </property>
+     
+     <property name="seatPassengers">
+     <map>
+     <entry key="J1234" value="Aabed"/>
+     <entry key="J1235" value="Rahil"/>
+     </map>
+     </property>
+     
+   </bean>
+   
+   
+   </beans>

@@ -1,0 +1,13 @@
+public class CycleSelling 
+{
+	public static void main(String[] args) 
+	{
+		int cyclePrice = Integer.parseInt(args[0]);
+		int repairs = Integer.parseInt(args[1]);
+		int coloring = Integer.parseInt(args[2]);
+		int newAccessories = Integer.parseInt(args[3]);
+		int profitWants = Integer.parseInt(args[4]);
+		int totalSellingPrice = cyclePrice + repairs + coloring + newAccessories + profitWants;
+	    System.out.prinln("Total Selling Price is : "+totalSellingPrice);
+	}
+}

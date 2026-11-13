@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+  <form action="add" method="post">
+  Enter Book ID <input type="text" name="id"> <br> <br>
+  Enter Book Name <input type="text" name="name"> <br> <br>
+  Enter Book Author <input type="text" name="author"> <br> <br>
+  Enter Book Publisher <input type="text" name="publisher"> <br> <br>
+  Enter Book Price <input type="text" name="price"> <br> <br>
+  Enter Book Quantity <input type="text" name="quantity"> <br> <br>
+  Enter Book Category <input type="text" name="category"> <br> <br>
+  Enter Book ISBN Number <input type="text" name="isbn"> <br> <br>
+  <input type="submit" value="Add Book">
+  
+  </form>
+</body>
+</html>
